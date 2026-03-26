@@ -1,0 +1,6 @@
+Absolute Path 
+D:\NODE JS Advance\Biswarup backend workspace\Section-03\10_file-system\text.txt
+
+Relative Path
+src\text.js
+.\src\text.js
