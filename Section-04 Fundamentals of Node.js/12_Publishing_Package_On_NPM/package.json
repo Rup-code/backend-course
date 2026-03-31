@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "ruptestnpmmath": "^1.0.1"
+  }
+}
