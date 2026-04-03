@@ -1,0 +1,14 @@
+{
+  "name": "my-app",
+  "bin": "app.xyz",
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "ruptestnpmmath": "^1.0.1"
+  },
+  "devDependencies": {
+    "vite": "^8.0.3"
+  }
+}
