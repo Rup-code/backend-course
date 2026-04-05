@@ -1,0 +1,17 @@
+{
+  "name": "words-counter-byrup",
+  "version": "1.0.0",
+  "description": "CLI tool to count words in a file",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "words-counter-byrup": "./index.js"
+  },
+  "keywords": [
+    "cli",
+    "word count",
+    "node"
+  ],
+  "author": "Rup",
+  "license": "MIT"
+}
