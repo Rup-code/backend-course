@@ -1,0 +1,46 @@
+import { createReadStream, createWriteStream, read } from 'node:fs';
+import net from 'node:net';
+
+const server = net.createServer((socket) => {
+  // socket.end('HTTP/1.1\n\nhii');
+  //   socket.write(
+  //     `HTTP/1.1 200 OKAY
+  // Access-Control-Allow-Origin:*
+  // Access-Control-Expose-Headers:*
+  // hello:world\n\n`,
+  //   );
+
+  socket.write('HTTP/1.1 200 OKAY\n');
+  socket.write('Access-Control-Allow-Origin: *\n');
+  socket.write('Access-Control-Expose-Headers: Hello, name\n');
+  socket.write('Hello: World\n');
+  socket.write('Name: Rup');
+  socket.write('\n\n');
+
+  // socket.end();
+  const readStream = createReadStream('testing.mp4');
+  // const readStream = createReadStream('river.webp');
+  // const readStream = createReadStream('numbers.txt');
+  readStream.pipe(socket);
+
+  readStream.on('end', () => {
+    console.log('File ended');
+  });
+
+  socket.on('data', (chunk) => {
+    console.log(chunk.toString());
+  });
+
+  socket.on('close', () => {
+    console.log(socket.remoteAddress, ': Client disconnected');
+  });
+
+  socket.on('error', () => {
+    console.log('Client Lost');
+  });
+  console.log('Client Connected', socket.remoteAddress);
+});
+
+server.listen(4000, '0.0.0.0', () => {
+  console.log('Server started on port 4000');
+});

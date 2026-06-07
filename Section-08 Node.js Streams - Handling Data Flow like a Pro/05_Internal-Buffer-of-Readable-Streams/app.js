@@ -15,5 +15,5 @@ readStream.on('readable', () => {
 // 1. Highwater mark value is equal to Internal buffer size
 // 2. Internal buffer jo hota hai , that is nothing but , the data which gets loaded in chunks
 // 3. `readable`  is a event which we can add to readStream , to check if any internal buffer data has come or not
-// 4. `readStrea.read()` If the stream has data ready, `.read()` will return a chunk (usually a `Buffer`).
+// 4. `readStream.read()` If the stream has data ready, `.read()` will return a chunk (usually a `Buffer`).
 // 5. If no more data is available, it returns `null`.

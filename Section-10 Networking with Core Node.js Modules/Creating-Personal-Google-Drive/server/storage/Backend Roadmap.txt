@@ -1,0 +1,694 @@
+Section 1: Introduction to Backend and Node.js
+Prerequisites
+What Is Backend & Client Server Architecture?
+CLI vs GUI
+What Is Node.js and What Is It Used For?
+Installing Node.js
+Running Our First Node.js Code
+Why Do We Need Node.js and How Is It Different From JavaScript in Browser?
+A Brief History of Node.js
+Section 2: Basics of Terminal
+Introduction to Terminal and Shell
+Basic Shell Commands (echo, pwd, whoami)
+Navigating the File System (cd)
+Listing Directory Contents (ls)
+Creating, Copying, Moving, and Deleting Files and Directories (touch, mkdir, cp, mv, rm, rmdir)
+Viewing and Editing Files with Commands (cat, nano, vim)
+What Is Prompt in Terminal?
+Configuring Our Terminal Using .bashrc File
+Using Aliases for Command Shortcuts (alias)
+Section 3: Basics of OS
+What Is CPU, Processor, and Core?
+What Is OS and Kernel?
+What Is a Process?
+What Is Thread, Concurrency, and Parallelism?
+Can a Process Exist Without a Thread?
+Debugging Worker Threads
+What Is an Environment Variable?
+Setting and Using Environment Variables
+Installing Windows Subsystem for Linux (WSL)
+Understanding the Path System: Windows vs. Linux Explained
+What are Executable Files?
+Managing File Permissions
+How Commands Get Executed?
+Important Methods and Properties of The Process Object
+Section 4: Fundamentals of Node.js
+Module System in Node.js
+Introduction to Common JS Module System
+module.exports VS exports
+module Object
+Module Wrapper Function
+Custom Require Function
+ES6 Modules
+Accessing filename and dirname in ES6 Modules
+Why Different Module Systems?
+Difference Between Common.js and ES6 Modules
+Different Types of Modules
+NPM and NPM Modules
+Creating and Publishing NPM Modules
+Understanding package.json File in Depth
+What is Shebang?
+Library VS CLI Packages and Local VS Global Packages
+How npx Works?
+What is npx?
+Introduction to FS Module
+Word Counter CLI Project
+Writing to a File Using Node.js
+Node.js File Operations: Rename, Delete, Move, Copy & More
+Section 5: Data Representation in Computing
+Introduction to Data Representation in Computing
+Decimal Number System
+Octal Number System
+Hexadecimal Number System
+Binary Number System
+Introducing Programmer's Calculator
+Digital Data Uints
+Binary Data on Physical Level
+Why DO We Use Decimal System?
+Character Sets vs Character Encodings (ASCII and Unicode)
+Understanding UTF-8 in Depth
+What are Unicode Planes?
+UTF-8 vs UTF-16 vs UTF-32
+Byte Order Mark (BOM) and Endianness (Big Endian & Little Endian)
+Section 6: Mastering Buffers - Handling Binary Data in Node.js
+Introduction to Buffers
+ArrayBuffer in JavaScript
+Signed and Unsigned Values
+Reading and Writing to Array Buffers
+Writing Multi-Byte Data
+Typed Arrays
+Transferring Array Buffer Data from Memory to Disk and Network
+Buffer in Node.js
+Alloc VS AllocUnsafe
+Buffer Pool in Node.js
+Buffer Methods and Properties
+Practical Use of Buffers
+Limitations of Buffers
+Base-64 Encoding
+Base-64 in Node.js
+Section 7: Event-Driven Architecture and EventEmitter in Node.js
+What is an I/O Operation?
+What is Async I/O?
+Introduction to Event-Driven Architecture
+The EventEmitter Class
+Creating and Emitting Events
+EventEmitter Methods
+Section 8: Node.js Streams - Handling Data Flow like a Pro
+Introduction to Streams
+Types Of Streams in Node.js
+Readable Streams
+Different States of Readable Streams
+Internal Buffer of Readable Streams
+More about Readable Streams
+Writable Streams
+Backpressure and Internal Buffer of Writable Streams
+Closing Writable Streams
+States of Writable Streams
+Piping Streams
+Piping Using Pipeline
+Duplex, Transform and Passthrough Streams
+Data Streams
+Piping and Redirection of Data Streams
+Writing 1 Lakh Numbers
+Why Streams Are So Fast?
+What is a File Descriptor?
+Reading File with File Descriptor
+Opening Files in Different Modes
+Writing to a File with File Descriptor
+Write One Lakh Numbers Faster than Streams
+Implementing Internal Buffer in our Custom Stream
+Handling Files Using Promises
+Working with Streams using Promises
+How Browsers use Streams?
+Streams in JavaScript
+Section 9: Basics of Computer Networking
+Why Should We Learn Networking?
+What is Computer Networking?
+Story of The Internet
+Story of DNS
+Story of World Wide Web
+Important Networking Devices
+Types of Network
+Creating Our Own LAN
+Creating Our Own WAN
+How Internet Comes to Our Homes?
+How does Mobile Internet Work?
+Understanding IPv4 Addresses in Depth
+Dynamic vs Static IP Address
+Private vs Public IP Address
+Benefits and Drawbacks of Public and Private IP Addresses
+How to get Public IP Adresss?
+Turning Our Laptop into a Public Server
+Running Multiples Severs on our Laptop
+Understanding Domain Name System (DNS)
+Connecting Our IP Address with a Domain Name
+How DNS Servers Work?
+DNS Hijacking
+Understanding IPv6 Addresses
+Turning Our Mobile Phone into a Public Server
+What are Port Numbers?
+Inspecting Port Numbers with Wireshark
+What are Network Interfaces?
+What is MAC Address?
+What is Firewall?
+Understanding OSI Model
+Understanding TCP/IP Model
+Network Topologies
+TCP and UDP: The Backbone of the Internet
+Remote Terminal Access Using SSH
+Transferring files using SCP
+SSH Public and Private Keys
+Connecting to Multiple SSH Servers
+Creating AWS Account
+Understanding AWS EC2 Instance
+AWS Cost Management
+More Topics to Learn
+Section 10: Networking with Core Node.js Modules
+Networking Capabilities of Node.js
+Creating UDP Server in Node.js
+What is Socket?
+Transferring Files Using UDP
+Creating TCP Server in Node.js
+Creating TCP Client using Node.js
+Handling Multiple TCP Clients
+Transferring Files Using TCP
+Creating HTTP Server using Net Module
+Understanding HTTP Headers
+Important Response Headers
+Controlling Data Transfer Speeds
+Inspecting TCP Data Packets in Wireshark
+Why We Await Twice When Making a Fetch Call?
+Uploading Files
+Creating HTTP Server Using HTTP Module
+HTTP Request Methods
+HTTP Response Status Codes
+Creating HTTP Client
+Anatomy of HTTP Request and Response
+Creating a Web Server
+Creating Online Storage Platform Like Google Drive
+Implementing Preview and Download Feature in Our Storage App
+Client-Side vs Server-Side Rendering
+Separating Our Client-Side and Server-Side Code
+Implementing File Upload with Progress
+Adding Delete Functionality
+Implementing Rename Functionality
+Making Our App Live on Internet
+Section 11: Building RESTful CRUD APIs with Express.js
+Intro to Express.js
+How Express Works Behind the Scenes?
+What is Middleware in Express?
+Handling Different HTTP Methods in Express
+Difference Between Route and Request URL
+Adding Global Middleware with app.use() Method
+Adding Route-Specific Middleware
+Serving Static Files using Express
+Sending JSON using Express
+Making File Storage App in Express
+Dynamic Routing in Express
+Handling File Uploads in Express
+What is CORS?
+Understanding Preflight Request
+Adding Single-Level Nested Directory Support in Our Storage App
+Adding Multi-Level Nested Directory Support
+Adding Directory Creation Functionality
+Understanding Path Traversal Vulnerability
+Fixing Vulnerability with Path Module
+Organizing Routes using Express Router
+Understanding the Problem with Our Code
+Creating Virtual File System
+Adding Directory Support in Our VFS
+Integrating VFS API in Our UI
+Adding Nested Directory Feature in Our VFS
+Adding Directory Rename and Delete Functionality
+Understanding REST API Principles
+Error Handling in Express
+Handling File Uploads Using Multer
+Showing Upload Progress While Using Multer in Backend
+Adding Basic User Registration Functionality
+Overview of New UI of Our App
+What are Cookies?
+Setting Cookies from Server
+Implementing Simple Login Functionality
+Providing User Specific File Access
+Adding Logout and User Profile Functionality
+Understanding res.download() Method
+Using app.route() Method to Clean Our Code
+Understanding router.param() Method
+What is HTTP Redirection and How Does it Work?
+Understanding Different Types of Form Data
+Difference Between Extended True and False
+Nested Dynamic Routes
+RegEx in Routes
+Using Arrays to Define Multiple Routes
+Express v4 vs v5
+Section 12: Mastering Database Fundamentals with MongoDB
+Introduction To Database
+Types Of Databases
+Introduction To MongoDB
+Understanding Mongo Shell
+Installing MongoDB Server
+MongoDB Fundamentals
+Creating Documents In MongoDB
+Reading Data In MongoDB
+Inspecting MongoDB Data Packages
+Update Operation In MongoDB
+Delete Operation In MongoDB
+Datatypes In MongoDB
+Object Id Datatype
+Different Number Types
+MongoDB Datatypes In Practice
+BSON Types In MongoDB
+Where Data Is Stored
+Configuring Our MongoDB Server
+Accessing Our MongoDB Server From Anywhere In The World
+Running MongoShell Scripts in JS Files
+What is MongoDB Playground?
+MongoDB in Node.js
+MongoDB CRUD Operations in Node.js
+Understanding Cursors in MongoDB
+Cursor Methods in MongoDB
+Batch Size in MongoDB
+Projection in MongoDB
+Limits of MongoDB
+MongoDB Setup in Our Storage App
+Integrating Database in User Routes
+Integrating Database in Directory Routes
+Integrating Database in File Routes
+Performing Bulk Operations in MongoDB
+Implementing Recursive Directory Delete Functionality
+Why ObjectId() Is Not a String?
+Fixing ObjectId() Validation
+Understanding Application Architecture
+Ordered Inserts in MongoDB
+What Is Upsert in MongoDB?
+Running Commands in MongoDB
+Operators in MongoDB
+What Is Schema?
+Adding Basic Schema Validation in MongoDB
+Creating a New Collection with Validation Enabled
+Understanding JSON Schema Validation
+Validation Action VS Validation Level
+Finding Invalid Documents in a Collection
+Adding Schema Validation in Our Storage App
+Handling Database Validation Errors in Our App
+What Are Transactions in Database?
+Implementing Transaction in Code
+ACID Properties of a Transaction
+Relational vs. Non-Relational Databases: Key Differences
+Embedded vs. Referenced Documents: Choosing the Right Data Model
+Understanding One-to-One, One-to-Many, and Many-to-Many Relationships
+Backup & Restore Using mongodump and mongoresotre for Backup
+Using mongoimport and mongoexport to Export and Import JSON or CSV Data
+mongoimport VS mongoexport: When to Use What?
+Securing MongoDB: Authentication and Authorization
+Enabling Auth in MongoDB Replica Set
+Installing MongoDB On AWS EC2 Ubuntu Instance
+Deploying MongoDB on EC2
+Exploring MongoDB Atlas
+Managed VS Self-Managed Databases
+Section 13: Mastering MVC Architecture with Mongoose
+Introduction to MVC Architecture
+Controllers in Action: Organizing Your Application Logic
+Views Explained: Creating and Managing User Interfaces
+Introduction to Mongoose and Models
+Mongoose Query Buffering: Queries Wait for Database Connection
+Schema and Types in Mongoose
+CRUD Operation Using Mongoose
+What are Thenable Objects in JavaScript?
+What is a Mongoose Query?
+What are Documents in Mongoose?
+Integrating Mongoose in Our TodoApp
+Adding Custom Validation in Mongoose Schema
+Using Ref and Populate to Fetch Referenced Fields
+Implementing MVC Architecture in StorageApp
+Integrating Mongoose in UserController
+Integrating Mongoose in FileController
+What are Virtuals in Mongoose?
+Define Custom Methods on Mongoose Documents
+Define Custom Static Methods on Mongoose Model
+What Is Middleware in Mongoose?
+Understanding Document Middleware
+Understanding Query Middleware
+Understanding Model Middleware
+Introduction to Indexes in MongoDB
+Understanding Unique True Property of Mongoose Schema
+Creating Unique Index for Email in Our StorageApp
+Document Versioning in Mongoose
+Understanding Mongoose Object
+Mongoose Built-in Error Types ValidationError, MongoServerError, etc.
+Section 14: Mastering Authentication and Authorization in Node.js
+Introduction to Authentication and Authorization
+Stateful vs Stateless Auth
+Limitations of Auth in Our Storage App
+Trying to Fix Cookie Expiry Issue
+Cryptography Basics: Understanding Encryption vs Hashing
+Basics of Hashing
+Hashing in Node.js Using crypto Module
+How Git Uses Hashing for Commits?
+Understanding Digital Signatures
+Signing Cookies in Node.js
+Understanding MAC and HMAC
+Signing Cookies Using cookie-parser
+Hashing Passwords Before Saving to the Database
+What Are Rainbow Tables?
+Understanding Key Derivation Functions
+Using pbkdf2() to Hash Passwords
+Understanding bcrypt
+Using bcrypt to Hash Passwords
+Understanding JSON Web Tokens
+Do Not Use JWT for Login
+What Are Sessions?
+Stateful vs Stateless Servers
+Overview of Our New LMS App
+Adding Guest Session in Our LMS App
+Implementing Cart Functionality
+Adding Get and Delete Routes for Cart
+Adding Authorized Sessions in LMS App
+Moving Cart Data to Cart Collection
+Implementing Logout and Session Expiry Functionality
+Auto-Deleting Documents in MongoDB
+Implementing Sessions in Storage App
+Restricting Multiple Device Access
+Implementing Logout from All Devices Functionality
+Sending Emails Using Node.js
+Sending Email With Custom Domain
+Verifying Email Using OTP
+Understanding OAuth and Its Flow
+Understanding OpenID Connect and Its Flow
+Client Registration for Google OAuth Integration
+Understanding Google’s OpenID Connect
+How to Open a Popup for Google Login?
+Creating a Different Page for Redirect URL
+Implementing Login With Google on Backend
+Implementing Logout Functionality
+Receiving Auth Code on Backend
+Putting Google Auth Redirect Logic in Backend Code
+Verifying ID Token
+Using Google Auth Library to Verify ID Token
+Using Google Auth Library to Fetch ID Token
+Using Google Auth Library to Generate AuthURL
+Calling User Info Endpoint With Access Token
+Customizing OAuth Login Popup With Prompt and Login Hint Parameters
+Error Handling in Google Login
+Implementing Google Login With Passport.js
+Grant Types in OAuth 2.0
+Understanding Implicit Grant Type
+Implementing Google Login Using Implicit Grant Type
+Problem With Implicit Login Flow
+Enabling One Tap Login and Fixing Implicit Flow Issue
+GSI vs FedCM
+Branding Guidelines of Login With Google Button
+Using GSI Library in React.js
+Adding Google Login in StorageApp
+Wrapping Up Authentication – Next Steps & Assignments
+Section 15: Understanding Role-Based Access Control (RBAC)
+What Is RBAC?
+Implementing GET All Users Endpoint
+Adding Role-Based Access in Users Route
+Role-Based UI Rendering
+Implementing User Logout Functionality
+Implementing User Delete Feature
+Implementing Soft Delete for Users
+Preventing Users from Self-Deletion
+What is Google Zanzibar and OpenFGA?
+RBAC Assignments for Storage App
+Section 16: Working with Redis – Caching, Session Storage, and Beyond
+Introduction to Redis
+Installing Redis: Server, CLI and GUI
+Data Types in Redis
+Working with Strings in Redis
+Time-to-Live (TTL): Expiring Keys in Redis
+Database Management in Redis
+Organizing Redis Keys with Namespacing
+Connecting Redis in Node.js
+Creating getJSON() and setJSON() Methods
+Working with RedisJSON Data Type
+Redis vs MongoDB: Speed Test
+Using Redis for Caching
+Using Redis as Session Store
+Understanding Redis Search and Indexing
+Fixing Multiple Device Access
+Working with Redis Search in GUI
+Exploring Redis Extension for VSCode
+What is Fuzzy Search in Redis?
+Understanding SCAN Command in Redis
+KEYS vs SCAN Command in Redis
+Working with Redis Lists Data Type
+Working with Redis Sets Data Type
+Working with Redis Hashes Data Type
+Working with Redis Hashes in Node.js
+Real-Time Messaging with Redis Pub/Sub
+Enabling Authentication in Redis
+Understanding Eviction Policies in Redis
+Exploring Redis Cloud
+More Topics to Explore in Redis
+Section 17: Securing Our Node.js Application
+Importance of Security in Web Apps
+Using .env File in Node.js Natively
+Storing Sensitive Info in .env File
+Understanding SQL Injection Vulnerability
+Schema-Based Data Validation With Zod
+Prevent SQL Injection: Validate User Input With Zod
+Understanding Same-Origin Policy
+Hacking the Web: Learn XSS Attacks Practically
+Fix XSS Vulnerability Using DOMPurify
+Types of XSS Attacks
+Understanding Reflected XSS Attack
+What Is DOM-Based XSS Attack?
+Understanding Content Security Policy in Depth
+Reporting CSP Violations
+Using Inline Scripts With Hash
+Using Inline Scripts With Nonce
+Performing Self-XSS Attack Even After CSP Is Enabled
+What Is Clickjacking?
+Understanding Domain Attribute in Cookies
+Understanding Top-Level Navigation
+Creating Self-Signed HTTPS Server in Node.js
+Understanding SameSite Cookie Attribute in Depth
+SameSite Cookies Attribute With Cross-Site Fetch Requests
+Understanding Cross-Site Request Forgery (CSRF) Attacks
+Preventing CSRF Attacks With CSRF Tokens
+Creating a CSRF Token Middleware
+Preventing CSRF Attacks Using Custom Headers
+Understanding Denial of Service (DoS) Attack
+Protecting APIs With Rate Limiting
+Using express-rate-limit Package
+Understanding DDoS Attack
+Important Security Headers You Should Know
+Using Helmet.js for Adding Security Headers
+Add API Throttling With Custom Throttle Function
+Using express-slow-down Package for Throttling
+Benefits of Throttling
+Drawbacks of Throttling
+Dynamic Throttling vs Adaptive Throttling
+Rate Limiting vs Throttling
+Searching Security Vulnerabilities in Storage App
+What Are Dependency Vulnerabilities?
+More Security Topics to Know
+Section 18: Cloud Storage Integration with AWS S3
+Showing Size of Each File
+Setting Max File Size Limit
+Adding Server-Side Validation for Max File Size
+Implementing Folder Size Feature
+Adding Total Storage Limit
+How to Add Path and Breadcrumb Features?
+Introduction to AWS S3 Bucket
+Benefits of Using S3 Bucket
+Serving Files Publicly Using S3 Bucket
+AWS CLI Introduction and Installation
+Working with S3 Bucket Using CLI
+Understanding AWS S3 API Command
+Managing Bucket Policy Using S3 API
+What Is AWS CloudShell?
+Understanding Signed URL in S3
+Identity and Access Management (IAM) in AWS
+What Are User Groups in IAM?
+Understanding IAM Policies
+Understanding IAM Roles
+AWS S3 SDK Setup in Node.js
+S3 CRUD Operations Using Node.js
+Showing S3 Upload Progress in Node.js
+Creating GET and PUT Signed URLs Using Node.js
+Creating Signed URLs Using AWS Presigner Library
+S3 Storage Classes and Pricing
+Delivering Content at Lightning Speed with CloudFront CDN
+Cache Invalidation in CloudFront
+Securing Files with CloudFront Signed URLs
+Comparing CloudFront Pricing with S3 Pricing
+Preparing Our StorageApp for S3 Bucket Integration
+Uploading to S3 from Browser (CORS Enabled)
+Integrating S3 Bucket in StorageApp – File Uploads
+Integrating S3 Bucket in StorageApp – File Downloads
+Implementing Upload Complete Endpoint for File Verification
+Implementing Delete Feature for S3 Files
+Integrating CloudFront in StorageApp
+Section 19: Razorpay and Stripe Payment Gateway Integration
+Introduction to Payment Gateway
+Creating Razorpay Account: Step-by-Step Guide
+Creating Stripe Account: Step-by-Step Guide
+Different Ways to Accept Payments with Razorpay and Stripe
+Enabling International Payments on Razorpay
+Receiving Payments Using Code in Razorpay
+What are Orders in Razorpay?
+Different States of Payment in Razorpay
+Using the Razorpay API: A Complete Guide
+Calling Razorpay API Using Fetch with Basic Auth
+Working with Node.js SDK of Razorpay
+Secure Payments with Razorpay Orders
+Integrating Razorpay in React and Node.js
+Securing Razorpay Order Creation
+Loading Razorpay CDN Script Dynamically
+Custom Checkout in Razorpay
+Accepting Payments on Stripe Using Payment Links
+Difference Between Invoice and Receipt
+What are Line Items?
+Receiving Amount in the Available Balance in Stripe Test Mode
+Introduction to Stripe API
+Core Resources in Stripe
+Payment Objects in Stripe - Checkout Sessions, Payment Intents, and Charges
+Getting Started with Stripe Node.js SDK
+Creating Checkout Session in Stripe Using Node.js
+Integrating Stripe in React and Node.js
+Custom Checkout in Stripe
+What is a Webhook?
+Why Do We Need Webhooks in Payment Gateway?
+Using ngrok to Make Our Server Public for Testing Webhooks
+Webhooks in Action
+Verifying Webhook Signature
+Understanding Webhooks Retry Logic
+Automatic Payments with Razorpay Subscriptions
+Subscription States in Razorpay
+Creating Razorpay Subscriptions Using Node.js
+Webhooks in Razorpay
+Verifying Razorpay Webhook Signature
+Subscriptions in Stripe
+Listening to Stripe Subscription Webhook Events
+Customer Portal in Stripe
+Integrating Razorpay in StorageApp
+Assignments for Payment Gateway Integration in StorageApp
+Section 20: Mastering Deployment and CI/CD Pipelines
+Creating GitHub Repository for StorageApp
+One Click Deployment with Netlify and Render
+Deploying Node.js Backend on AWS EC2
+Understanding PM2 in Depth: Background Process Management
+What Is NGINX and How to Install It?
+NGINX Configuration Deep Dive + Static Server
+Understanding the Autoindex and Location Directives in NGINX
+Creating Multiple Servers Using NGINX
+What Is a Proxy Server? Forward vs Reverse Proxy Explained
+Using NGINX as a Reverse Proxy for Node.js Apps
+Setting Response and Request Headers in NGINX
+Understanding Variables in NGINX
+NGINX Logs Explained: Access Logs and Error Logs
+Setting Up NGINX Server on AWS EC2
+HTTP to HTTPS: Enabling SSL Certificate on Our Website
+Deploying React App on AWS EC2 Using NGINX
+Deploying React App on S3 and CloudFront for Lightning Fast Speed⚡
+Adding Custom Domain + SSL to CloudFront with ACM
+Using Cloudflare for DNS Management
+CloudFront Functions Explained
+Understanding and Paying AWS Bills
+Introduction to CI/CD
+What Is DevOps?
+Automating Deployments with Bash Scripting
+Create Custom CI/CD Pipeline Using Node.js and GitHub Webhooks
+Verifying GitHub Webhook Signature
+Creating Custom CI/CD Pipeline for Backend
+Zero Downtime Deployment with PM2 Cluster Mode
+Turning Our Laptop Into a CI/CD Server
+What Is GitHub Actions?
+How to Run Jobs Sequentially?
+What Are Actions in GitHub Actions?
+Expressions and Context Objects in GitHub Actions
+Understanding Environments and Secrets in GitHub Actions
+Setting Environments Dynamically in GitHub Actions
+Understanding If Condition in GitHub Actions
+Creating CI/CD Pipeline for Frontend Using GitHub Actions
+Creating CI/CD Pipeline for Backend Using GitHub Actions
+Setting Up Self Hosted Runners
+Assignments for Deployment Section
+Section 21: Serverless Computing with AWS Lambda
+What Is Serverless Computing?
+Introduction To AWS Lambda Functions
+Checking AWS Lambda Logs In CloudWatch
+Developing AWS Lambda Locally
+Creating A Todo API Using AWS Lambda
+Lifecycle Of A Lambda Function
+Connecting A Database In AWS Lambda
+Serving Files Using Lambda Functions
+Creating An Express App With AWS Lambda
+What Is An API Gateway?
+Understanding AWS API Gateway
+Default Route In AWS API Gateway
+Route Priority In AWS API Gateway
+Adding A Custom Domain In API Gateway
+Adding An API Gateway Trigger In Lambda Functions
+Deploying StorageApp On AWS Lambda
+Fixing Login Issues By Increasing Lambda Memory
+Fixing File Access Issues Caused By An Invalid CloudFront Private Key
+Fixing File Upload Issues By Granting S3 Permissions To Lambda
+AWS Lambda And API Gateway Pricing
+How HTTP Requests Reach Lambda Function
+Introduction To Serverless Framework And Assignments
+Section 22: Observability Fundamentals for Production Systems
+Why Observability Matters in Production
+Monitoring vs Observability
+Understanding Production Failures in Backend Systems
+The Three Pillars of Observability
+Introduction to Metrics
+Types of Metrics in Backend Systems
+Understanding Time Series Data
+How Metrics Are Stored and Queried
+Introduction to Prometheus
+Exposing Metrics from a Node.js Application
+Prometheus Scraping and Target Discovery
+Understanding Labels and Cardinality
+Introduction to PromQL
+Calculating Rates, Averages, and Percentiles
+Understanding Latency and Tail Latency
+Histograms and Percentile Approximation
+Designing Good Metrics for Node.js Backends
+Introduction to Logging in Production
+Structured Logging and Log Levels
+Logging in Node.js with Pino
+Centralized Logging Concepts
+Introduction to Loki
+How Loki Stores and Queries Logs
+Writing Effective LogQL Queries
+Correlating Logs with Requests
+Introduction to Distributed Tracing
+Understanding Traces and Spans
+Introduction to OpenTelemetry
+Tracing a Node.js Application
+Introduction to Grafana
+Visualizing Metrics in Grafana
+Visualizing Logs in Grafana
+Correlating Metrics and Logs in Grafana
+Introduction to Alerting
+Designing Meaningful Alerts
+Observability for Database-Heavy Applications
+Observability for API Performance
+Debugging Slow Requests in Production
+Debugging Errors Using Metrics and Logs
+Observability Architecture for a Single VPS
+Scaling Observability Concepts
+Introduction to APM Tools
+Observability vs APM
+Grafana Stack vs ELK Stack
+Cost Considerations in Observability
+Production Observability Checklist
+Common Observability Mistakes
+Observability Best Practices for Node.js
+Real World Observability Case Study
+Designing an Observability Strategy from Scratch
+Section 23: Node.js Under the Hood
+Overview of Node.js Architecture
+Understanding the V8 JavaScript Engine
+Exploring the Node.js Source Code Repository
+What Is libuv and Its Role in Node.js?
+How libuv Handles Asynchronous I/O
+Exploring the Thread Pool in libuv
+What Is the Event Loop, and Why Is It Important?
+Phases of the Event Loop
+How Node.js Interacts with C++ Code
+Garbage Collection in V8
